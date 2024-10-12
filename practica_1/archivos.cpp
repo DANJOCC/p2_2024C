@@ -2,11 +2,17 @@
 #include<fstream>
 
 using namespace std;
+struct Person {
+    string name;
+    int ced;
+    string email;
+};
+
 
 int main(){
 
+    Person person;
     int x=0;
-    int data;
     ofstream output("./data/data.txt");
     
     if( !output.is_open()){
@@ -14,15 +20,20 @@ int main(){
         return 0;
     }
 
-    cout<<"Cuantos datos va a ingresa?"<<endl;
+    cout<<"Cuantos personas va a ingresar?"<<endl;
     cin>>x;
    
     
-
+    int flag = x;
     while(x>0){
-        cout<<"ingrese un numero entero"<<endl;
-        cin>>data;
-        output<<data<<endl;
+        cout<<"ingrese nombre de la persona N "<<flag-x+1<<endl;
+        cin>>person.name;
+        cout<<"ingrese la cedula "<<endl;
+        cin>>person.ced;
+        cout<<"ingrese el email"<<endl;
+        cin>>person.email;
+
+        output<<person.name<<"\t"<<person.ced<<"\t"<<person.email<<endl;
         x--;
     }
 
