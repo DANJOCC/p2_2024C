@@ -1,0 +1,15 @@
+Practica de hoy:
+
+1. Iniciar un repositorio
+2. Crear un programa que genere un archivo .txt en una carpeta con el nombre de Data. 1 commit
+3. Llenar el archivo con N registros de personas. 1 commit
+4. El archivo tiene que seguir este formato:
+
+Daniel 27998876 danjoc@gmail.com
+Alfonzo 30214894 alfonzo@gmail.com
+
+5. Leer el archivo y mostrar un mensaje en consola de la siguiente forma (1 commit):
+	
+	mi nombre es Daniel, numero de cedula: 27998876, mi correo es danjoc@gmail.com
+
+6. Subir el programa a un repositorio remoto 
