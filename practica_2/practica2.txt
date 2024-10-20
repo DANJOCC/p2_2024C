@@ -1,0 +1,24 @@
+Practica de hoy:
+
+1 Crear un repositorio con dos ramas.
+    - La primera rama sera la rama principal.
+    - La segunda rama sera la de desarrollo.
+
+2 En la rama de desarrollo crear un programa que guarde en binario los datos
+de un numero X de personas como una estructura, los datos de una persona son:
+    - id_del_registro
+    - nombre
+    - cedula
+    - edad
+    - peso 
+    - altura
+    - genero (M o F)
+
+3. Unir los cambios hechos con la rama principal una vez esten satisfechos con su codigo.
+
+4. En la rama de desarrollo, crear un segundo programa que lea el archivo binario generado por el primero, pero 
+solo lea los datos del registro X, e imprimia sus datos en pantalla.
+
+5. Unir los cambios hechos con la rama principal una vez esten satisfechos con su codigo.
+
+6. Subirlo a un repositorio remoto
