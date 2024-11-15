@@ -35,7 +35,7 @@ using namespace std;
 */
 
     union Marca{
-        char a;
+        float a;
         Point p;
     };
 
@@ -61,12 +61,13 @@ int main(){
 
     Marca u; //declaracion de una variable del tipo Marca
 
-    u.a='a';
+    u.a=2.3;
 
     cout<<u.a<<endl;
 
-    u.p.x=23;
-    u.p.y=24;
+
+u.p.x = 24;
+u.p.y = 25;
 
     cout<<u.p.x<<endl;
     cout<<u.p.y<<endl;

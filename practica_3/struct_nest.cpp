@@ -20,13 +20,21 @@ struct StructC{
     }sigma;
 
     StructB beta;
+    
+    StructC(int w, int u, StructB beta){
+        this->sigma.u = u;
+        this->sigma.w = w;
+        this->beta.z = beta.z;
+        this->beta.alpha = beta.alpha;
+    }
 };
 
 
 int main(){
 
     StructB myStruct ={4, { 3 , 5 } };
-    StructC myStruct2 = { { 4 , 5 }, { 6, { 1, 2 } } };
+    StructC myStruct2(4,5, myStruct);
+   // StructC myStruct2 = { { 4 , 5 }, { 6, { 1, 2 } } };
 
     //valores en myStruct 
 
