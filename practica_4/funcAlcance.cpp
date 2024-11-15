@@ -11,11 +11,11 @@ int a = 5; //global
 int main()
 {
     int a = 3 ; // es local de main
-    int sum(int, int,int);
-
-     int sum(int b, int c, int d){
-        return a+b+c+d;
-    };
+    cout<<sum(a,4);
+    cout<<endl;
+    cout<<a;
+     cout<<endl;
+    cout<<a;
     cout<<sum(3,4,2);
     cout<<endl;
     cout<<sumRef(a,4);
@@ -34,7 +34,6 @@ int sumRef(int& a, int b){// a es local, pero es una referencia
     a = a + 1;
     return a+b;
 }
- int sum(int b, int c, int d){
-        return a+b+c+d;
-    };
-
+int sum(int b, int c, int d){//a es la variable global definida anteriormente
+    return a+b+c+d;
+};
